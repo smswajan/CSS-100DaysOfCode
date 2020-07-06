@@ -3,12 +3,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.feld{
     width: 1140px;
     margin: 0 auto;
+    position: relative;
+    height: 100vh;
 }
-.bat{}
-.bat:hover{
+body{
+    background-color: lightgreen;
+
+}
+.bat{
+    height: 340px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+.field:hover .bat{
     transform: rotate(-60deg);
     transform-origin: 100% 0;
+}
+.ball{
+    display: block;
+    height: 50px;
+    position: relative;
+    left: 430px;
+    transition: transform 1s ease-in .2s;
+}
+.field:hover .ball{
+    transform: translate(1000px, -200px);
+}
+.cricket{
+    height: 75px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
 }

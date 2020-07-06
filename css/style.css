@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.bat{}
+.bat:hover{
+    transform: rotate(-60deg);
+    transform-origin: 100% 0;
+}
